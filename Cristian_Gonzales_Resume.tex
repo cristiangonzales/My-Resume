@@ -4,9 +4,11 @@
 \documentclass{res}
 
 \usepackage[margin=0.1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
 % Magic that makes errors form collusion of resume class and header/footer:
 % https://tex.stackexchange.com/questions/105586/footer-not-appearing-on-resume
-\usepackage{fancyhdr}
 \textheight=10in
 \footskip=25pt
 \fancyhf{} % clear all header and footer fields
@@ -26,16 +28,51 @@ LinkedIn: \textit{https://www.linkedin.com/in/cristiangonzales}\\
 Email: \textit{xcristian.gonzales@gmail.com}\\GitHub: \textit{https://github.com/cristiangonzales}\\
 
 % Border
-%\begin{center}
 \hrule
-%\end{center}
 
 % Education
-{\LARGE Education}\\
-{\Large Computer Science, B. S.: University of California, Santa Cruz, 2016 -- 2018}
-\begin{itemize}
-\item Current GPA: 3.38 / 4, Expected Graduation: Spring 2018
-\end{itemize}
+{\huge Education}\\[2mm]
+{\Large Computer Science, B. S.: University of California, Santa Cruz, 2016 -- 2018}\\
+	\begin{itemize}
+		\vspace{-3mm}
+		\item Current GPA: 3.38 / 4, Expected Graduation: Spring 2018
+	\end{itemize}
+\vspace{-1mm}
+\leavevmode
+
+% Border
+\hrule
+
+{\huge Skills}\\[2mm]
+\begin{minipage}{0.45\textwidth}
+	{\Large Proficient in:}\\
+		\begin{itemize}[noitemsep,nolistsep]
+			\vspace{-3mm}			\item Android Development\\
+			\vspace{-3mm}
+			\item C\\
+			\vspace{-3mm}			\item Java\\
+			\vspace{-3mm}			\item PostgreSQL\\
+			\vspace{-3mm}			\item Python\\
+			\vspace{-3mm}			\item RESTful APIs\\
+			\vspace{-3mm}			\item Unix\\
+		\end{itemize}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+	{\Large Working Knowledge:}\\
+		\begin{itemize}[noitemsep,nolistsep]
+			\vspace{-3mm}
+			\item C++\\
+			\vspace{-3mm}			i\item OS Development (Swift)\\
+			\vspace{-3mm}
+			\item JavaScript/HTML/CSS\\
+			\vspace{-3mm}
+			\item Kali Linux\\
+			\vspace{-3mm}			\item MIPS Assembly\\
+			\vspace{-3mm}			\item PHP\\
+			\vspace{-3mm}			\item Scheme\\
+		\end{itemize}
+\end{minipage}
+
 
 % End resume
 \end{resume}
