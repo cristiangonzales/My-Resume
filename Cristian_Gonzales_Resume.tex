@@ -1,0 +1,45 @@
+% Author: Cristian Gonzales
+%%%%%%%%%%%%%%
+
+\documentclass{res}
+
+\usepackage[margin=0.1in]{geometry}
+% Magic that makes errors form collusion of resume class and header/footer:
+% https://tex.stackexchange.com/questions/105586/footer-not-appearing-on-resume
+\usepackage{fancyhdr}
+\textheight=10in
+\footskip=25pt
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\fancyfoot[C]{} % other info in "inner" position of footer line
+\pagestyle{fancy}
+
+% Begin document
+\begin{document}
+% Begin resume
+\begin{resume}
+
+% Header
+{\Huge Cristian Gonzales}\\
+\textsc{\large Computing Science Student}\\
+LinkedIn: \textit{https://www.linkedin.com/in/cristiangonzales}\\
+Email: \textit{xcristian.gonzales@gmail.com}\\GitHub: \textit{https://github.com/cristiangonzales}\\
+
+% Border
+%\begin{center}
+\hrule
+%\end{center}
+
+% Education
+{\LARGE Education}\\
+{\Large Computer Science, B. S.: University of California, Santa Cruz, 2016 -- 2018}
+\begin{itemize}
+\item Current GPA: 3.38 / 4, Expected Graduation: Spring 2018
+\end{itemize}
+
+% End resume
+\end{resume}
+% Footer
+\lfoot{\textit{References available upon request.}}
+
+\end{document}
