@@ -3,9 +3,10 @@
 
 \documentclass{res}
 
-\usepackage[margin=0.1in]{geometry}
+\usepackage[margin=0.1in, right=30mm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{enumitem}
+\usepackage{textcomp}
 
 % Magic that makes errors form collusion of resume class and header/footer:
 % https://tex.stackexchange.com/questions/105586/footer-not-appearing-on-resume
@@ -16,19 +17,17 @@
 \fancyfoot[C]{} % other info in "inner" position of footer line
 \pagestyle{fancy}
 
-% Begin document
 \begin{document}
-% Begin resume
 \begin{resume}
 
 % Header
 {\Huge Cristian Gonzales}\\
-\textsc{\large Computing Science Student}\\
+\vspace{2mm}
+\textsc{\large Software Engineer}\\
 LinkedIn: \textit{https://www.linkedin.com/in/cristiangonzales}\\
 Email: \textit{xcristian.gonzales@gmail.com}\\GitHub: \textit{https://github.com/cristiangonzales}\\
 
-% Border
-\hrule
+\hrule width18.5cm
 
 % Education
 {\huge Education}\\[2mm]
@@ -40,11 +39,12 @@ Email: \textit{xcristian.gonzales@gmail.com}\\GitHub: \textit{https://github.co
 \vspace{-1mm}
 \leavevmode
 
-% Border
-\hrule
+\hrule width18.5cm
 
+% Skills section
 {\huge Skills}\\[2mm]
 \begin{minipage}{0.45\textwidth}
+	\vspace{-5mm}
 	{\Large Proficient in:}\\
 		\begin{itemize}[noitemsep,nolistsep]
 			\vspace{-3mm}			\item Android Development\\
@@ -58,6 +58,7 @@ Email: \textit{xcristian.gonzales@gmail.com}\\GitHub: \textit{https://github.co
 		\end{itemize}
 \end{minipage}
 \begin{minipage}{0.45\textwidth}
+	\vspace{1mm}
 	{\Large Working Knowledge:}\\
 		\begin{itemize}[noitemsep,nolistsep]
 			\vspace{-3mm}
@@ -67,16 +68,56 @@ Email: \textit{xcristian.gonzales@gmail.com}\\GitHub: \textit{https://github.co
 			\item JavaScript/HTML/CSS\\
 			\vspace{-3mm}
 			\item Kali Linux\\
+			\vspace{-3mm}
+			\item \LaTeX\\\
 			\vspace{-3mm}			\item MIPS Assembly\\
 			\vspace{-3mm}			\item PHP\\
 			\vspace{-3mm}			\item Scheme\\
 		\end{itemize}
 \end{minipage}
+\vspace{-1mm}
 
+\hrule width18.5cm
 
-% End resume
+% Experience
+{\huge Experience}\\[2mm]
+{\Large Software Engineer I, Northrop Grumman}\\
+	\begin{itemize}
+		\vspace{-3mm}
+		\item Expected start date: June 2018
+	\end{itemize}
+{\Large Technical Intern, Northrop Grumman, 2017}\\
+	\begin{itemize}
+		\vspace{-3mm}
+		\item Programming in Java for the Mission Systems sector.
+	\end{itemize}
+{\Large Undergraduate Researcher, University of California, Santa Cruz, 2017}\\
+	\begin{itemize}
+		\vspace{-3mm}
+		\item Under Professor Seshadhri Comandur, worked on improving the user interface and developing a website for ESCAPE, an open-source framework that counts patterns in graphs and computes counts for 5-vertex subgraphs.
+	\end{itemize}
+{\Large Analyst, CR Capital, LLC, 2017 -- Present}\\
+	\begin{itemize}
+		\vspace{-3mm}
+		\item Propriety value based student investment fund focused on strategic analysis on equities to generate returns. In teams, we perform research, pitch, and valuate companies in a collaborative effort to make long term investments as a whole group. Currently outperforming S\&P 500 by 17\%.
+	\end{itemize}
+	\vspace{2mm}
+
+\hrule width18.5cm
+
+{\huge Awards and Distinctions}\\[2mm]
+{\Large Guest Speaker, 13th Annual Southern California Linux Expo (SCaLE 13x), 2015}\\
+	\begin{itemize}
+		\vspace{-3mm}
+		\item Speech: Tech Education in the 21st Century, gave a 30-minute speech, regarding effective tech education to youth in public schools, to a crowd of 50 people.
+	\end{itemize}
+{\Large Dean\textquotesingle s Honor Roll, University of California, Santa Cruz, 2016}\\
+	\begin{itemize}
+		\vspace{-3mm}
+		\item Awarded to students whose GPAs are over a 3.5/4. Received Fall 2016 and Winter 2017.
+	\end{itemize}
+\vspace{-1mm}
+
 \end{resume}
-% Footer
 \lfoot{\textit{References available upon request.}}
-
 \end{document}
