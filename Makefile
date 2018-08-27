@@ -2,7 +2,7 @@
 # Property of Apex Holdings, All Rights Reserved
 
 make:
-	pdflatex Cristian_Gonzales_Resume.tex
+	pdflatex My_Resume.tex
 
 clean:
-	rm Cristian_Gonzales_Resume.log
+	rm My_Resume.log
