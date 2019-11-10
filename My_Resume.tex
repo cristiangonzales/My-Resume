@@ -61,17 +61,6 @@
 
 \vspace{-3mm}
 
-% Education
-\textsc{{\Large Education}}
-\vspace{0.5mm}
-\hrule width18.5cm
-%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{University of California, Santa Cruz}\\
-\textit{Computer Science, B.S.}
-\hfill
-June 2016 -- June 2019\\
-\vspace{-4mm}
-
 % Experience
 \textsc{{\Large Experience}}
 \vspace{0.5mm}
@@ -83,9 +72,10 @@ June 2016 -- June 2019\\
 July 2019 -- Present\\[1mm]
 	\begin{itemize}
 		\vspace{-3mm}
-    \item Replaced the build system of a legacy codebase using Apache Maven to reduce ambiguity for developers learning the build system (the former build system in place was Apache Ant).
-    \item Maintained Java code in Red Hat Enterprise Linux (RHEL) and Windows environments.
-    \item Maintained shell and Perl scripts to streamline build processes.
+    \item Migrated the build systems of two legacy codebases to Apache Maven to have a unified build system across all Java codebases and reduce complexity for developers learning the build (the former build system in place for one codebase was Apache Ant, and there was no build automation system for the second codebase).
+    \item Created and maintained Jenkins CI/CD pipelines to streamline build processes in different target environments--–namely, Linux, Solaris, and Windows.
+    \item Developed and maintained shell and Perl scripts to streamline build processes, callable by both configuration management and the Jenkins agent (instantiated by the Jenkins server).
+    \item Maintained Java code in Red Hat Enterprise Linux (RHEL) and Windows environments, which included implementing a new feature in a minor version release.
   \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -101,6 +91,18 @@ June 2017 -- August 2017\\[1mm]
 	\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
+% Education
+\textsc{{\Large Education}}
+\vspace{0.5mm}
+\hrule width18.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{University of California, Santa Cruz}\\
+\textit{Computer Science, B.S.}
+\hfill
+June 2016 -- June 2019\\
+\vspace{-4mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
 % Projects
 \textsc{{\Large Projects}}
 \vspace{0.5mm}
@@ -116,23 +118,17 @@ June 2017 -- August 2017\\[1mm]
 		\item Uses consistent hashing to dynamically and uniformly distribute unique keys across all nodes in the network.
 	\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{SwiftySuncalc}\\
-\textit{A CocoaPods library for finding sun and moon positions/phases.}
-	\vspace{2mm}
-	\begin{itemize}
-		\item A direct Swift port of the original suncalc.js micro-library, created and maintained by Vladimir Agafonkin on GitHub.
-		\item Used to calculate sun position, sunlight phases (times for sunrise, sunset, dusk, etc.), moon position and lunar phase for the given location and time.
-  \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Skills section
 \textsc{{\Large Skills}}
 \vspace{0.5mm}
 \hrule width18.5cm
 	\textsc{Languages:} C, Java, Python, SQL\\[2mm]
-  \textsc{Other Languages:} CSS, HTML, JavaScript, Perl, Shell scripting, Swift\\[2mm]
-  \textsc{Tools:} Apache Ant, Apache Maven, Docker, Eclipse, Git, \LaTeX, PostgresSQL, PyCharm, Xcode\\[2mm]
-	\textsc{Concepts:} Agile Development (Scrum framework), Code Coverage, Continuous Integration, Dependency Injections, Distributed Systems, RESTful APIs\\[0.5mm]
+  \textsc{Other Languages:} CSS, HTML, JavaScript, Perl, Swift\\[2mm]
+  \textsc{Shells (and their scripting derivatives):} Bash, C, Windows PowerShell\\[2mm]
+  \textsc{Build systems:} Apache Ant, Apache Maven, make\\[2mm]
+  \textsc{Tools:} Docker, Eclipse, Git, \LaTeX, PostgresSQL, PyCharm, Jenkins, Xcode\\[2mm]
+  \textsc{Concepts:} Agile Development (Scrum framework), Build Engineering, Code Coverage, Continuous Integration/Delivery (CI/CD), DevOps, Dependency Injections, Distributed Systems, RESTful APIs\\[0.5mm]
 \vspace{-2mm}
 \end{resume}
 \lfoot{\textit{References available upon request.}}
