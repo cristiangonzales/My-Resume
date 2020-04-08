@@ -72,10 +72,13 @@
 July 2019 -- Present\\[1mm]
 	\begin{itemize}
 		\vspace{-3mm}
-    \item Migrated the build systems of two legacy codebases to Apache Maven to have a unified build system across all Java codebases and reduce complexity for developers learning the build (the former build system in place for one codebase was Apache Ant, and there was no build automation system for the second codebase).
-    \item Created and maintained Jenkins CI/CD pipelines to streamline build processes in different target environments--–namely, Linux, Solaris, and Windows.
-    \item Developed and maintained shell and Perl scripts to streamline build processes, callable by both configuration management and the Jenkins agent (instantiated by the Jenkins server).
+    \item Developed a new API to filter Java Message Service (JMS) messages from a legacy JMS service, using JMS message selectors and Google Guice injections to differentiate between different instances of the service.
+    \item Created and maintained Jenkins CI/CD pipelines to streamline build processes in different target environments--–namely, Linux, Solaris, and Windows--decreasing the time of the build and release process from four days to two hours.
+    \item Implemented automated build systems for two legacy codebases using Apache Maven (the former build system in place for one codebase was Apache Ant, and there was no build automation system for the second codebase).
     \item Maintained Java code in Red Hat Enterprise Linux (RHEL) and Windows environments, which included implementing a new feature in a minor version release.
+    \item Developed and maintained shell and Perl scripts to streamline build and release processes, tailored to be callable by both configuration management outside of a CI/CD pipeline, and the Jenkins agent (instantiated by the Jenkins server).
+    \item Promoted Agile methodologies by leading daily Scrum meetings, retrospectives, and plannings in an program-wide effort to migrate away from a waterfall model.
+    \item Oversaw another developer in the implementation of unit test automation and code coverage aggregation.
   \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,37 +88,8 @@ July 2019 -- Present\\[1mm]
 June 2017 -- August 2017\\[1mm]
 	\begin{itemize}
 		\vspace{-3mm}
-		\item Interfaced with NASA's GMSEC API to build a proof-of-concept visualization tool which tracked health statuses of satellites. This inspired a new feature in another Northrop Grumman product.
-		\item Ported ephemeris data, via web sockets, across multiple Northrop Grumman domains/applications.
-		\item Implemented basic dependency injections, using the Google Guice framework, across the codebase.
-	\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Education
-\textsc{{\Large Education}}
-\vspace{0.5mm}
-\hrule width18.5cm
-%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{University of California, Santa Cruz}\\
-\textit{Computer Science, B.S.}
-\hfill
-June 2016 -- June 2019\\
-\vspace{-4mm}
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-% Projects
-\textsc{{\Large Projects}}
-\vspace{0.5mm}
-\hrule width18.5cm
-%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{Fault Tolerant and Scalable Key-Value Store (KVS)}\\
-\textit{A scalable Docker cluster of nodes that is fault tolerant and eventually consistent.}
-	\vspace{2mm}
-	\begin{itemize}
-		\item Nodes were designed using a RESTful API interface (Python Flask), so clients may use the KVS and add nodes.
-		\item Favors availability over strong consistency, per CAP theorem, so eventual consistency is guaranteed in light of network partitions, with a property of bounded staleness for stale data after network partitions are healed.
-		\item After a network is healed, nodes with different values of the same key are resolved by causal order (if they are causally concurrent, ties are resolved using local time stamps on replica nodes).
-		\item Uses consistent hashing to dynamically and uniformly distribute unique keys across all nodes in the network.
+  \item Interfaced with NASA's GMSEC API to build a proof-of-concept visualization tool which tracked health statuses of satellites.
+  \item Ported ephemeris data, via web sockets, across multiple Northrop Grumman domains/applications while leveraging code reuse through dependency injections, using Google Guice.
 	\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -128,7 +102,30 @@ June 2016 -- June 2019\\
   \textsc{Shells (and their scripting derivatives):} Bash, C, Windows PowerShell\\[2mm]
   \textsc{Build systems:} Apache Ant, Apache Maven, make\\[2mm]
   \textsc{Tools:} Docker, Eclipse, Git, \LaTeX, PostgresSQL, PyCharm, Jenkins, Xcode\\[2mm]
-  \textsc{Concepts:} Agile Development (Scrum framework), Build Engineering, Code Coverage, Continuous Integration/Delivery (CI/CD), DevOps, Dependency Injections, Distributed Systems, RESTful APIs\\[0.5mm]
+  \textsc{Concepts:} Agile Development (Scrum framework), Code Coverage, Continuous Integration/Delivery (CI/CD), DevOps, Dependency Injections, Distributed Systems, Release Engineering, RESTful APIs\\[0.5mm]
+\vspace{-4mm}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Education
+\textsc{{\Large Education}}
+\vspace{0.5mm}
+\hrule width18.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{University of California, Santa Cruz}\\
+\textit{Computer Science, B.S.}
+\hfill
+June 2016 -- June 2019\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards/Distinctions
+\textsc{{\Large Awards and Distinctions}}
+\vspace{0.5mm}
+\hrule width18.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Bravo To Our Stars}\\
+\textit{Awarded by Northrop Grumman}
+\hfill
+March 2020\\
 \vspace{-2mm}
 \end{resume}
 \lfoot{\textit{References available upon request.}}
