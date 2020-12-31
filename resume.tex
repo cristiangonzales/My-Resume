@@ -1,0 +1,125 @@
+% Author: Cristian Gonzales %%%%%%%%%%%%%%
+
+\documentclass{res}
+
+\usepackage[margin=0.1in, right=30mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{multicol}
+
+% Magic that makes errors form collusion of resume class and header/footer:
+% https://tex.stackexchange.com/questions/105586/footer-not-appearing-on-resume
+\textheight=10in
+\footskip=25pt
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\fancyfoot[C]{} % other info in "inner" position of footer line
+\pagestyle{fancy}
+
+\begin{document}
+\begin{resume}
+
+% Header
+\begin{center}
+\textsc{{\Huge Cristian Gonzales}}\\
+\vspace{1mm}
+\textsc{\large Software Engineer at Northrop Grumman}\\
+\vspace{1mm}
+\end{center}
+
+% Links
+\begin{multicols}{4}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\faLinkedinSquare\ 
+\textit{https://bit.ly/eey7W}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\columnbreak
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\faGithub\ 
+\textit{https://bit.ly/2McyUX}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\columnbreak
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\faGlobe\ 
+\textit{https://bit.ly/2vA649}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\columnbreak
+%%%%%%%%%%%%%%%%%%%%%%%%
+\faEnvelope\ 
+\textit{xcristian.gonzales@gmail.com}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\end{multicols}
+
+\vspace{-3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textsc{{\Large Experience}}
+\vspace{0.5mm}
+\hrule width18.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Northrop Grumman}\\
+\textit{Infrastructure Engineer}
+\hfill
+August 2020 -- Present\\[1mm]
+	\begin{itemize}
+		\vspace{-3mm}
+    \item Developed a library of HashiCorp Packer configurations to build hardened RHEL and CentOS machine images with respect to DISA and NIST STIGs, using an in-house Ansible library, for VMWare VSphere and Docker.
+    \item Wrote Ansible plays to harden firewalld with respect to NIST STIGs, and tested the plays by spoofing IP-layer header attributes and creating Martian packets, using Python's Berkeley Sockets API interface and kernel tunables.
+    \item Wrote Ansible roles to configure and harden deployments of Cisco NX-OS Layer-3 switches and Chrony timeservers.
+    \item Decreased the execution time of an Ansible role to harden VMWare ESXi guests by roughly 70\%.
+  \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Northrop Grumman}\\
+\textit{Build and Release Engineer}
+\hfill
+July 2019 -- August 2020\\[1mm]
+	\begin{itemize}
+		\vspace{-3mm}
+    \item Developed Jenkins pipelines to streamline different build processes in Linux, Solaris, and Windows, decreasing the time of the build and release process from four days to two hours, recognized in a company press release.
+    \item Using a Jenkins scripting engine, ported static Jenkins web interface logic into a dedicated Groovy DSL codebase to describe job configurations as code, tailored for the needs of different Jenkins pipeline workflows (developer sandboxes, release builds, nightly builds, etc.)
+    \item Automated deployment for builds for ad hoc projects and ported build systems from Apache Ant to Apache Maven.
+  \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Northrop Grumman}\\
+\textit{Software Engineer}
+\hfill
+July 2019 -- August 2020\\[1mm]
+	\begin{itemize}
+		\vspace{-3mm}
+    \item Developed an API to filter JMS messages from a legacy JMS service, using Guice injections to differentiate between different instances of the service and JAXB for object serialization to send messages across the wire.
+    \item Refactored database schemas and their associated JPA mappings, along with protocol buffer definitions, to differentiate between different satellite missions for a server-side event message syslog implementation, where the mission identifier was injected using Guice.
+    \item Developed a JAXB unmarshalling utility so subscribers may filter syslog event messages based on the satellite mission, where subscriptions were made through the unmarshalled data and Guice dependency injections.
+    \item Served as a Scrum Master, leading daily Scrum meetings, retrospectives, and planning.
+  \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Northrop Grumman}\\
+\textit{Software Engineering Intern}
+\hfill
+June 2017 -- August 2017\\[1mm]
+	\begin{itemize}
+		\vspace{-3mm}
+  \item Interfaced with NASA's GMSEC API to build a visualization tool which tracked health statuses of satellites.
+  \item Ported payload data, via web sockets, across multiple Northrop Grumman domains/applications while leveraging code reuse through dependency injections, using Google Guice.
+	\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\textsc{{\Large Skills}}
+\vspace{0.5mm}
+\hrule width18.5cm
+\textsc{Languages:} Bash, C, csh, Groovy, Java, JavaScript, Perl, PowerShell, Python, Swift, SQL\\[2mm]
+\textsc{Build systems:} Apache Ant, Apache Maven, Gradle, make\\[2mm]
+\textsc{Tools:} Ansible, Docker, HashiCorp Packer, Git, \LaTeX, PostgresSQL, Jenkins, nmap, nping, tcpdump, Wireshark\\[2mm]
+\textsc{Concepts:} Agile Development, Operating Systems, Computer Networking, Containerization and Virtualization, Continuous Integration/Delivery (CI/CD), DevOps, Dependency Injections, Distributed Systems, Object Relational Mapping (ORM), Publish-Subscribe Messaging Pattern, Release Engineering, RESTful APIs\\[0.5mm]
+\vspace{-2mm}
+\end{resume}
+\lfoot{\textit{References available upon request.}}
+\end{document}
