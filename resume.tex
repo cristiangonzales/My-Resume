@@ -67,15 +67,15 @@
 \hrule width18.5cm
 %%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{Northrop Grumman}\\
-\textit{Infrastructure Engineer}
+\textit{Infrastructure Software Engineer}
 \hfill
 August 2020 -- Present\\[1mm]
 	\begin{itemize}
 		\vspace{-3mm}
-    \item Developed a library of HashiCorp Packer configurations to build hardened RHEL and CentOS machine images with respect to DISA and NIST STIGs, using an in-house Ansible library, for VMWare VSphere and Docker.
+  \item Developed a library of dynamic HashiCorp Packer configurations to build DISA and NIST STIG-hardened RHEL and CentOS machine images for VMWare VSphere and Docker, using Gradle (Groovy) and an in-house Ansible library, migrating deployments from PXE-boot to template-based and reducing deployment times by roughly 60\%.
+    \item Developed Jenkins pipelines to deploy hardened infrastructure and test in-house Ansible configurations using Docker workflows, allowing the team to save at least 80 developer hours per month, and developed VSphere wrapper APIs, using Java and Gradle, for Jenkins resource management.
     \item Wrote Ansible plays to harden firewalld with respect to NIST STIGs, and tested the plays by spoofing IP-layer header attributes and creating Martian packets, using Python's Berkeley Sockets API interface and kernel tunables.
-    \item Wrote Ansible roles to configure and harden deployments of Cisco NX-OS Layer-3 switches and Chrony timeservers.
-    \item Decreased the execution time of an Ansible role to harden VMWare ESXi guests by roughly 70\%.
+    \item Wrote Ansible roles to configure and harden deployments of Cisco NX-OS Layer-3 switches, VMWare ESXi guests, Linux NetworkManager, and Chrony timeservers.
   \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{Northrop Grumman}\\
@@ -85,7 +85,7 @@ July 2019 -- August 2020\\[1mm]
 	\begin{itemize}
 		\vspace{-3mm}
     \item Developed Jenkins pipelines to streamline different build processes in Linux, Solaris, and Windows, decreasing the time of the build and release process from four days to two hours, recognized in a company press release.
-    \item Using a Jenkins scripting engine, ported static Jenkins web interface logic into a dedicated Groovy DSL codebase to describe job configurations as code, tailored for the needs of different Jenkins pipeline workflows (developer sandboxes, release builds, nightly builds, etc.)
+    \item Ported static Jenkins web interface logic into a dedicated Groovy DSL codebase to describe job configurations as code, tailored for the needs of different Jenkins pipeline workflows (developer sandboxes, release builds, nightly builds, etc.), where efforts allowed for an estimated 40\% decrease of COGS for the configuration management team.
     \item Automated deployment for builds for ad hoc projects and ported build systems from Apache Ant to Apache Maven.
   \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,7 +98,7 @@ July 2019 -- August 2020\\[1mm]
     \item Developed an API to filter JMS messages from a legacy JMS service, using Guice injections to differentiate between different instances of the service and JAXB for object serialization to send messages across the wire.
     \item Refactored database schemas and their associated JPA mappings, along with protocol buffer definitions, to differentiate between different satellite missions for a server-side event message syslog implementation, where the mission identifier was injected using Guice.
     \item Developed a JAXB unmarshalling utility so subscribers may filter syslog event messages based on the satellite mission, where subscriptions were made through the unmarshalled data and Guice dependency injections.
-    \item Served as a Scrum Master, leading daily Scrum meetings, retrospectives, and planning.
+    %\item Served as a Scrum Master, leading daily Scrum meetings, retrospectives, and planning.
   \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{Northrop Grumman}\\
@@ -107,15 +107,16 @@ July 2019 -- August 2020\\[1mm]
 June 2017 -- August 2017\\[1mm]
 	\begin{itemize}
 		\vspace{-3mm}
-  \item Interfaced with NASA's GMSEC API to build a visualization tool which tracked health statuses of satellites.
-  \item Ported payload data, via web sockets, across multiple Northrop Grumman domains/applications while leveraging code reuse through dependency injections, using Google Guice.
+  %\item Interfaced with NASA's GMSEC API to build a visualization tool which tracked health statuses of satellites.
+  %\item Ported payload data, via web sockets, across multiple Northrop Grumman domains/applications while leveraging code reuse through dependency injections, using Google Guice.
+\item Prototyped a visualization tool to track satellite health statuses with NASA's GMSEC API and Guice injections.
 	\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \textsc{{\Large Skills}}
 \vspace{0.5mm}
 \hrule width18.5cm
-\textsc{Languages:} Bash, C, csh, Groovy, Java, JavaScript, Perl, PowerShell, Python, Swift, SQL\\[2mm]
+\textsc{Languages:} Bash, C, csh, Go, Groovy, Java, JavaScript, Perl, PowerShell, Python, SQL\\[2mm]
 \textsc{Build systems:} Apache Ant, Apache Maven, Gradle, make\\[2mm]
 \textsc{Tools:} Ansible, Docker, HashiCorp Packer, Git, \LaTeX, PostgresSQL, Jenkins, nmap, nping, tcpdump, Wireshark\\[2mm]
 \textsc{Concepts:} Agile Development, Operating Systems, Computer Networking, Containerization and Virtualization, Continuous Integration/Delivery (CI/CD), DevOps, Dependency Injections, Distributed Systems, Object Relational Mapping (ORM), Publish-Subscribe Messaging Pattern, Release Engineering, RESTful APIs\\[0.5mm]
