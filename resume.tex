@@ -25,7 +25,7 @@
 \begin{center}
 \textsc{{\Huge Cristian Gonzales}}\\
 \vspace{1mm}
-\textsc{\large Software Engineer at Northrop Grumman}\\
+\textsc{\large Software Engineer at Bizrate Insights}\\
 \vspace{1mm}
 \end{center}
 
@@ -66,10 +66,25 @@
 \vspace{0.5mm}
 \hrule width18.5cm
 %%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Bizrate Insights (Meredith Corporation)}\\
+\textit{Backend Software Engineer}
+\hfill
+July 2021 -- Present\\[1mm]
+	\begin{itemize}
+		\vspace{-3mm}
+    \item Introduced in-memory caches to microservices (AWS Lambda) to reduce network requests to an internal A/B testing service, reducing response times of microservices of interest by roughly 80\% for ``hot'' Lambda containers--benchmarks in the order of 5000ms to \textless 1000ms.
+    \item Minified, and introduced CDNs (AWS CloudFront) for, static content being served by a core Java Spring microservice, cutting down the time to serve static content by \textgreater 60\% in some cases.
+    \item Architected an in-house microservice (AWS Lambda) sitting behind a REST controller (AWS API Gateway) to ban users at the network boundary, using AWS Cloud Development Kit and AWS Web Application Firewall (WAF), whereby WAF would examine universally unique identifiers associated with the user.
+    \item Introduced Object Relational Modeling, using SQLAlchemy, in the form of a Data Access Layer and packaged as a Python pip distribution, to replace ad hoc raw database operations being made in Apache Airflow jobs.
+    \item Cultivated a strong engineering culture by championing Test-Driven Development where there was otherwise none, resulting in the turnaround time for features in the Software Development Lifecycle (SDLC) being cut by nearly half, as bugs where caught earlier in the SDLC, and SDETs and developers were able to work in tandem rather than synchronously.
+    \item Championed DevOps by defining cloud infrastructure-as-code through CloudFormation, allowing for infrastructure to become less anecdotal and helping developer velocity when an engineer would try to understand the surrounding infrastructure of a given part of the greater architecture.
+    \item Championed continuous pair programming to continually review code, per extreme programming practices, and mentored junior engineers on the team in doing so.
+  \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{Northrop Grumman}\\
 \textit{Infrastructure Software Engineer}
 \hfill
-August 2020 -- Present\\[1mm]
+August 2020 -- July 2021\\[1mm]
 	\begin{itemize}
 		\vspace{-3mm}
   \item Developed a library of dynamic HashiCorp Packer configurations to build DISA and NIST STIG-hardened RHEL and CentOS machine images for VMWare VSphere and Docker, using Gradle (Groovy) and an in-house Ansible library, migrating deployments from PXE-boot to template-based and reducing deployment times by roughly 60\%.
@@ -89,8 +104,11 @@ July 2019 -- August 2020\\[1mm]
     \item Automated deployment for builds for ad hoc projects and ported build systems from Apache Ant to Apache Maven.
   \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
+% Manual page break
+\vspace*{4mm}
+%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{Northrop Grumman}\\
-\textit{Software Engineer}
+\textit{Backend Software Engineer}
 \hfill
 July 2019 -- August 2020\\[1mm]
 	\begin{itemize}
@@ -98,7 +116,7 @@ July 2019 -- August 2020\\[1mm]
     \item Developed an API to filter JMS messages from a legacy JMS service, using Guice injections to differentiate between different instances of the service and JAXB for object serialization to send messages across the wire.
     \item Refactored database schemas and their associated JPA mappings, along with protocol buffer definitions, to differentiate between different satellite missions for a server-side event message syslog implementation, where the mission identifier was injected using Guice.
     \item Developed a JAXB unmarshalling utility so subscribers may filter syslog event messages based on the satellite mission, where subscriptions were made through the unmarshalled data and Guice dependency injections.
-    %\item Served as a Scrum Master, leading daily Scrum meetings, retrospectives, and planning.
+    \item Served as a Scrum Master, leading daily Scrum meetings, retrospectives, and planning.
   \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{Northrop Grumman}\\
@@ -118,8 +136,8 @@ June 2017 -- August 2017\\[1mm]
 \hrule width18.5cm
 \textsc{Languages:} Bash, C, csh, Go, Groovy, Java, Perl, PowerShell, Python, SQL\\[2mm]
 \textsc{Build systems:} Apache Ant, Apache Maven, Gradle, make\\[2mm]
-\textsc{Tools:} Ansible, Docker, HashiCorp Packer, Git, \LaTeX, Jenkins, nmap, nping, tcpdump, Wireshark\\[2mm]
-\textsc{Concepts:} Agile Development, Operating Systems, Computer Networking, Containerization and Virtualization, Continuous Integration/Delivery (CI/CD), DevOps, Dependency Injections, Distributed Systems, Object Relational Mapping (ORM), Publish-Subscribe Messaging Pattern, Release Engineering, RESTful APIs\\[0.5mm]
+\textsc{Tools:} Ansible, AWS, Apache Airflow, AWS CloudFormation, Docker, HashiCorp Packer, Git, \LaTeX, Jenkins, nmap, nping, tcpdump, Wireshark\\[2mm]
+\textsc{Concepts:} Agile Development, Operating Systems, Computer Networking, Containerization and Virtualization, Continuous Integration/Delivery (CI/CD), DevOps, Dependency Injections, Distributed Systems, Microservices, Object Relational Mapping (ORM), Object Serialization, Publish-Subscribe Messaging Pattern, Release Engineering, RESTful APIs, Test-Driven Development (TDD)\\[0.5mm]
 \vspace{-2mm}
 \end{resume}
 \lfoot{\textit{References available upon request.}}
